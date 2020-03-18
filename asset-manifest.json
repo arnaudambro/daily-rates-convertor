@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/daily-rates-convertor/static/js/main.5e35fd74.chunk.js",
+    "main.js.map": "/daily-rates-convertor/static/js/main.5e35fd74.chunk.js.map",
+    "runtime-main.js": "/daily-rates-convertor/static/js/runtime-main.c69480ba.js",
+    "runtime-main.js.map": "/daily-rates-convertor/static/js/runtime-main.c69480ba.js.map",
+    "static/js/2.fec3b8cd.chunk.js": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js",
+    "static/js/2.fec3b8cd.chunk.js.map": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js.map",
+    "index.html": "/daily-rates-convertor/index.html",
+    "precache-manifest.1689c50654dea06b673402a993c918dd.js": "/daily-rates-convertor/precache-manifest.1689c50654dea06b673402a993c918dd.js",
+    "service-worker.js": "/daily-rates-convertor/service-worker.js",
+    "static/js/2.fec3b8cd.chunk.js.LICENSE.txt": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c69480ba.js",
+    "static/js/2.fec3b8cd.chunk.js",
+    "static/js/main.5e35fd74.chunk.js"
+  ]
+}

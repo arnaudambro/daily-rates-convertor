@@ -3,13 +3,13 @@ import SwipeToDelete from 'react-swipe-to-delete-ios'
 import { Table, TableCell, TableRow, Input, Unit, BigButton, Buttons } from './styles'
 import * as utils from './utils'
 
-const newMission = {
+const newMission = (vente = 400, revient = 550) => ({
   included: true,
   mission: '',
   duration: '',
-  vente: '',
-  revient: ''
-}
+  vente,
+  revient,
+})
 
 class MissionsTable extends React.Component {
 
@@ -19,7 +19,11 @@ class MissionsTable extends React.Component {
   }
 
   addMission = () => {
-    this.setState(({ missions }) => ({ missions: [...missions, newMission] }))
+    this.setState(({ missions }) => {
+      if (!missions.length) return { missions: [newMission()] }
+      const { vente, revient } = missions[missions.length - 1]
+      return { missions: [...missions, newMission(vente, revient)] }
+    })
   }
 
   handleDelete = index => {

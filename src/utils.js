@@ -1,6 +1,5 @@
 
 const hoursSeparator = 'h'
-const hoursPerDay = 7
 
 const computeDurationInHours = duration => Number(duration.split(hoursSeparator)[0]) + Number(duration.split(hoursSeparator)[1] / 60)
 

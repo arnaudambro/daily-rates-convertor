@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle, { Container } from './styles'
+import MissionsTable from './MissionsTable';
+import Password from './Password';
+import Modale from './Modale';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  state = { showPassword: true, showHoursPerDay: false }
+
+  removePassword = () => this.setState({ showPassword: false })
+
+  showChangeHoursPerDay = () => this.setState({ showHoursPerDay: true })
+  hideChangeHoursPerDay = hours => {
+    window.localStorage.setItem('hoursPerDay', hours)
+    this.setState({ showHoursPerDay: false })
+  }
+
+  render() {
+    const { showPassword, showHoursPerDay } = this.state;
+    return(
+      <>
+        <GlobalStyle/>
+        <Container>
+          <MissionsTable changeHoursPerDay={this.showChangeHoursPerDay}/>
+          {showPassword && <Password removeModal={this.removePassword}/>}
+          {showHoursPerDay && (
+            <Modale
+              title="Changer le nombre d'heures par jour"
+              onRemoveModal={this.hideChangeHoursPerDay}
+              initValue={window.localStorage.getItem('hoursPerDay') || 7}
+            />
+          )}
+        </Container>
+      </>
+     )
+  }
 }
 
 export default App;

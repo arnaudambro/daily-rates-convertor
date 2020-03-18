@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/daily-rates-convertor/static/js/main.5e35fd74.chunk.js",
-    "main.js.map": "/daily-rates-convertor/static/js/main.5e35fd74.chunk.js.map",
+    "main.js": "/daily-rates-convertor/static/js/main.1f04346d.chunk.js",
+    "main.js.map": "/daily-rates-convertor/static/js/main.1f04346d.chunk.js.map",
     "runtime-main.js": "/daily-rates-convertor/static/js/runtime-main.c69480ba.js",
     "runtime-main.js.map": "/daily-rates-convertor/static/js/runtime-main.c69480ba.js.map",
-    "static/js/2.fec3b8cd.chunk.js": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js",
-    "static/js/2.fec3b8cd.chunk.js.map": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js.map",
+    "static/js/2.9ca517b8.chunk.js": "/daily-rates-convertor/static/js/2.9ca517b8.chunk.js",
+    "static/js/2.9ca517b8.chunk.js.map": "/daily-rates-convertor/static/js/2.9ca517b8.chunk.js.map",
     "index.html": "/daily-rates-convertor/index.html",
-    "precache-manifest.1689c50654dea06b673402a993c918dd.js": "/daily-rates-convertor/precache-manifest.1689c50654dea06b673402a993c918dd.js",
+    "precache-manifest.0e20b6e309a734c15c620b1bbdde2921.js": "/daily-rates-convertor/precache-manifest.0e20b6e309a734c15c620b1bbdde2921.js",
     "service-worker.js": "/daily-rates-convertor/service-worker.js",
-    "static/js/2.fec3b8cd.chunk.js.LICENSE.txt": "/daily-rates-convertor/static/js/2.fec3b8cd.chunk.js.LICENSE.txt"
+    "static/js/2.9ca517b8.chunk.js.LICENSE.txt": "/daily-rates-convertor/static/js/2.9ca517b8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c69480ba.js",
-    "static/js/2.fec3b8cd.chunk.js",
-    "static/js/main.5e35fd74.chunk.js"
+    "static/js/2.9ca517b8.chunk.js",
+    "static/js/main.1f04346d.chunk.js"
   ]
 }

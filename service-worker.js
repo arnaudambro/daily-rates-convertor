@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/daily-rates-convertor/precache-manifest.fb57c1d83d1be1dbcde136fbd6c08285.js"
+  "/daily-rates-convertor/precache-manifest.8e31390ca074111db4441b575b21f3da.js"
 );
 
 self.addEventListener('message', (event) => {

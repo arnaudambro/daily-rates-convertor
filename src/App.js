@@ -27,7 +27,7 @@ class App extends React.Component {
           {showHoursPerDay && (
             <Modale
               title="Changer le nombre d'heures par jour"
-              onRemoveModal={this.hideChangeHoursPerDay}
+              onRemoveModaloread={this.hideChangeHoursPerDay}
               initValue={window.localStorage.getItem('hoursPerDay') || 7}
             />
           )}

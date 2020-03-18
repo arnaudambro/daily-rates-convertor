@@ -15,4 +15,5 @@ So : you type in the mission name, the duration you spent, the official daily ra
 Now you click on "Capture", and the table is showing what your client needs to see.
 
 
-
+Password: coronavirus
+You can change the password if you fork this project and in your `.env` file you put a md5 hashed password

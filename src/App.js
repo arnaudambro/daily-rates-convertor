@@ -8,6 +8,11 @@ class App extends React.Component {
 
   state = { showPassword: true, showHoursPerDay: false }
 
+  componentDidMount() {
+    const hoursPerDay = window.localStorage.getItem('hoursPerDay');
+    if (!hoursPerDay) window.localStorage.setItem('hoursPerDay', 7)
+  }
+
   removePassword = () => this.setState({ showPassword: false })
 
   showChangeHoursPerDay = () => this.setState({ showHoursPerDay: true })
@@ -28,7 +33,7 @@ class App extends React.Component {
             <Modale
               title="Changer le nombre d'heures par jour"
               onRemoveModaloread={this.hideChangeHoursPerDay}
-              initValue={window.localStorage.getItem('hoursPerDay') || 7}
+              initValue={window.localStorage.getItem('hoursPerDay')}
             />
           )}
         </Container>

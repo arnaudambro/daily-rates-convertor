@@ -72,7 +72,7 @@ class MissionsTable extends React.Component {
               Ajouter une mission
           </BigButton>
           <BigButton onClick={this.props.changeHoursPerDay}>
-              Changer le nombre d'heures par jour ({window.localStorage.getItem('hoursPerDay') || 7})
+              Changer le nombre d'heures par jour ({window.localStorage.getItem('hoursPerDay')})
           </BigButton>
           <BigButton highlight={captureClient} onClick={this.toggleCaptureClient}>
               Capture client

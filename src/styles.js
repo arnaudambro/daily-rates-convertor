@@ -27,9 +27,9 @@ export const Container = styled.div`
 `;
 
 const hideCellsCss = css`
-  * [data-type="check"] { display: none; }
-  * [data-type="revient"] { display: none; }
-  * [data-type="duration"] { display: none; }
+  * [data-type="check"] { display: none !important; }
+  * [data-type="revient"] { display: none !important; }
+  * [data-type="duration"] { display: none !important; }
 `;
 
 export const Table = styled.div`

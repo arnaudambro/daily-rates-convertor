@@ -2,6 +2,8 @@ import React from 'react';
 import Modale from './Modale';
 import md5 from 'md5'
 
+console.log(md5('coronavirus'))
+
 class Password extends React.Component {
 
   handlePasswordChange = password => {
